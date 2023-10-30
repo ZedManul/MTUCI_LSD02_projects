@@ -170,11 +170,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(80,130)" to="(100,130)"/>
     <wire from="(80,90)" to="(100,90)"/>
     <wire from="(80,50)" to="(180,50)"/>
+    <comp lib="6" loc="(361,56)" name="Text">
+      <a name="text" val="Sum"/>
+    </comp>
     <comp loc="(250,50)" name="Half Adder">
       <a name="label" val="Half Adder"/>
     </comp>
-    <comp lib="0" loc="(80,50)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="6" loc="(49,91)" name="Text">
+      <a name="text" val="A"/>
+    </comp>
+    <comp lib="6" loc="(43,55)" name="Text">
+      <a name="text" val="C-in"/>
     </comp>
     <comp lib="0" loc="(320,110)" name="Pin">
       <a name="facing" val="west"/>
@@ -183,6 +189,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="1" loc="(310,110)" name="OR Gate">
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(50,134)" name="Text">
+      <a name="text" val="B"/>
+    </comp>
+    <comp lib="6" loc="(361,117)" name="Text">
+      <a name="text" val="C-out"/>
+    </comp>
+    <comp lib="0" loc="(80,50)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(320,50)" name="Pin">
       <a name="facing" val="west"/>
