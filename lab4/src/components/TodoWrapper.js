@@ -3,7 +3,7 @@ import { TodoForm } from './TodoForm'
 import {v4 as uuidv4} from 'uuid'
 import { Todo } from './Todo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload, faFilter, faMultiply, faUpDown, faUpload } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDownShortWide, faDownload, faFilter, faMultiply, faUpload } from '@fortawesome/free-solid-svg-icons';
 uuidv4();
 
 export const TodoWrapper = () => {
@@ -25,7 +25,7 @@ export const TodoWrapper = () => {
             task: todo,
             completed: false
         }])
-        console.log(todos)
+        
     }
 
     const toggleComplete = id => {
@@ -101,7 +101,7 @@ export const TodoWrapper = () => {
             <option value='in-progress'>In Progress</option>
           </select>
            
-          <FontAwesomeIcon className='sort-icon' icon={faUpDown} />
+          <FontAwesomeIcon className='sort-icon' icon={faArrowDownShortWide} />
           <select onChange={handleSortChange}>
             <option value='time'>Time</option>
             <option value='name'>Name</option>
