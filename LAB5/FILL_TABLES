@@ -1,3 +1,4 @@
+
 --subject (id, title, professor, difficulty_out_of_10) 
 INSERT INTO subject VALUES (1, 'ВВиТ', 'Руслан Заликов', 8.7);
 INSERT INTO subject VALUES (2, 'Кибернетика', 'Сергей Симонов', 7.8);
