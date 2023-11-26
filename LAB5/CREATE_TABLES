@@ -1,0 +1,19 @@
+CREATE TABLE student (
+id INTEGER PRIMARY KEY,
+name VARCHAR(255),
+favorite_subject VARCHAR(255),
+in_dormitory BIT,
+fear_of_session_out_of_10 FLOAT NOT NULL);
+
+CREATE TABLE subject (
+id INTEGER PRIMARY KEY,
+title VARCHAR(255) UNIQUE,
+professor VARCHAR(255),
+difficulty_out_of_10 FLOAT NOT NULL);
+
+CREATE TABLE the_situation (
+student_id INTEGER REFERENCES student (id),
+subject_id INTEGER REFERENCES subject (id),
+sacrifices VARCHAR(255),
+progress_percent INTEGER NOT NULL,
+PRIMARY KEY (student_id, subject_id));
