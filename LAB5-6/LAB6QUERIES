@@ -1,0 +1,15 @@
+/*
+SELECT in_dormitory, AVG(fear_of_session_out_of_10) AS avg_fear FROM student
+GROUP BY in_dormitory
+ORDER BY fear_of_session_out_of_10 ASC 
+
+SELECT subject_id, COUNT(*) AS sacrifices_taken FROM the_situation
+GROUP BY subject_id
+ORDER BY sacrifices_taken DESC
+
+SELECT favorite_subject, COUNT(*) AS subject_rating FROM student
+GROUP BY favorite_subject
+ORDER BY subject_rating DESC
+
+*/
+

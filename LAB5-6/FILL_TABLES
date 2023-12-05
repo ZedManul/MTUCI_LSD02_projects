@@ -1,0 +1,99 @@
+
+--subject (title, professor, difficulty_out_of_10) 
+--1
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'ВВиТ', 'Руслан Заликов', 6.7);
+--2
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'Кибернетика', 'Сергей Симонов', 6.8);
+--3
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'История России', 'Евгений Кунц',9.9);
+--4
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'Основы Российской Государственности', 'Генадий Забротченко',11);
+--5
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'Физкультура', 'Игорь Королев', 5.0);
+--6
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'Высшая Математика', 'Лилия Кимматовна', 6.7);
+--7
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'Линейная Алгебра и Аналитическая Геометрия', 'Лилия Кимматовна', 6.8);
+--8
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'Английский Язык', 'Диана Давидовна', 9.0);
+--9
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( 'Физика', 'Сергей Вальковский', 0.0);
+
+/*
+INSERT INTO subject (title, professor, difficulty_out_of_10)
+ VALUES ( '', '', 0.0);
+
+*/
+
+--student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Логинов Сергей', 2, 0, 1);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Константин Баринов', 5, 0, 5);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Никитин Андрей', 2, 1, 7);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Лебедев Дмитрий', 1, 0, 2);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Вотчицева Вероника', 7, 0, 8);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Иванов Артём', 8, 0, 0);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Майорова София', 6, 1, 6);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Зюлина Екатерина', 1, 1, 3);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Боданюк Алексей', 1, 1, 5);
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( 'Волчков Алексей', 6, 0, 5);
+
+/*
+INSERT INTO student (name, favorite_subject, in_dormitory, fear_of_session_out_of_10)
+ VALUES ( '', 1, 0, 0);
+
+*/
+ 
+--the situation (student_id, subject_id, sacrifices, progress_percent)
+INSERT INTO the_situation VALUES (1, 1, 'Сон');
+INSERT INTO the_situation VALUES (1, 3, 'Стипендия за второй семестр');
+INSERT INTO the_situation VALUES (1, 4, 'Душа');
+
+INSERT INTO the_situation VALUES (2, 1, 'Время в электричке');
+INSERT INTO the_situation VALUES (2, 2, '2500 руб на антикафе');
+INSERT INTO the_situation VALUES (2, 3, 'Пот, кровь и слёзы');
+INSERT INTO the_situation VALUES (2, 4, 'Только пятёрки');
+INSERT INTO the_situation VALUES (2, 9, 'Надежда на автомат');
+
+INSERT INTO the_situation VALUES (3, 2, 'Сон');
+INSERT INTO the_situation VALUES (3, 3, 'Нервная система');
+INSERT INTO the_situation VALUES (3, 9, 'Уважение к лабораторным');
+
+--INSERT INTO the_situation VALUES (1, 1, '');
+INSERT INTO the_situation VALUES (4, 3, 'Год жизни');
+INSERT INTO the_situation VALUES (4, 4, 'Три часа сна в неделю');
+
+INSERT INTO the_situation VALUES (5, 2, 'Сон');
+INSERT INTO the_situation VALUES (5, 3, 'Сон');
+
+INSERT INTO the_situation VALUES (6, 8, 'Самооценка');
+INSERT INTO the_situation VALUES (6, 2, 'Здоровый сон');
+
+INSERT INTO the_situation VALUES (7, 7, 'Нервы');
+
+INSERT INTO the_situation VALUES (8, 5, 'Сон');
+
+INSERT INTO the_situation VALUES (9, 5, 'Здоровье');
+INSERT INTO the_situation VALUES (9, 1, 'Время');
+
+INSERT INTO the_situation VALUES (10, 9, 'Психика');
+INSERT INTO the_situation VALUES (10, 2, 'Время на выходных');
+INSERT INTO the_situation VALUES (10, 3, 'Жизнь');

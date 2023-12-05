@@ -1,0 +1,4 @@
+
+DROP TABLE subject;
+DROP TABLE student;
+DROP TABLE the_situation;
