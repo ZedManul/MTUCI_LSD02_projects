@@ -1,0 +1,10 @@
+/*
+
+SELECT * FROM student;
+
+SELECT title, professor FROM subject;
+
+SELECT * FROM the_situation
+WHERE subject_id = 2;
+
+*/
