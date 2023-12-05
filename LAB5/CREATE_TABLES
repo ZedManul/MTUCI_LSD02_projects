@@ -1,21 +1,22 @@
 
 CREATE TABLE student (
-id INTEGER PRIMARY KEY,
+id INTEGER PRIMARY KEY AUTOINCREMENT,
 name VARCHAR(255),
 favorite_subject VARCHAR(255),
 in_dormitory BIT,
 fear_of_session_out_of_10 FLOAT NOT NULL);
 
 CREATE TABLE subject (
-id INTEGER PRIMARY KEY,
+id INTEGER PRIMARY KEY AUTOINCREMENT,
 title VARCHAR(255) UNIQUE,
 professor VARCHAR(255),
 difficulty_out_of_10 FLOAT NOT NULL);
 
+
 CREATE TABLE the_situation (
-student_id INTEGER REFERENCES student (id),
-subject_id INTEGER REFERENCES subject (id),
+student_id INTEGER,
+subject_id INTEGER,
 sacrifices VARCHAR(255),
-progress_percent INTEGER NOT NULL,
-CHECK ((progress_percent>=0) AND (progress_percent<=100))
-PRIMARY KEY (student_id, subject_id));
+FOREIGN KEY (student_id) REFERENCES student (id),
+FOREIGN KEY (subject_id) REFERENCES subject (id)
+);
