@@ -3,13 +3,20 @@ SELECT in_dormitory, AVG(fear_of_session_out_of_10) AS avg_fear FROM student
 GROUP BY in_dormitory
 ORDER BY fear_of_session_out_of_10 ASC 
 
-SELECT subject_id, COUNT(*) AS sacrifices_taken FROM the_situation
+SELECT title, COUNT(*) AS sacrifices_taken FROM the_situation
+INNER JOIN subject ON subject.id = the_situation.subject_id
 GROUP BY subject_id
 ORDER BY sacrifices_taken DESC
 
-SELECT favorite_subject, COUNT(*) AS subject_rating FROM student
+
+SELECT title, COUNT(*) AS subject_rating FROM student
+INNER JOIN subject ON subject.id = student.favorite_subject
 GROUP BY favorite_subject
 ORDER BY subject_rating DESC
 
 */
 
+SELECT title, COUNT(*) AS subject_rating FROM student
+INNER JOIN subject ON subject.id = student.favorite_subject
+GROUP BY favorite_subject
+ORDER BY subject_rating DESC
